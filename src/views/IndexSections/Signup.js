@@ -53,19 +53,15 @@ export default function Signup() {
         <Row className="row-grid justify-content-between align-items-center">
           <Col lg="6">
             <h3 className="display-3 text-white">
-              A beautiful Black Design{" "}
-              <span className="text-white">completed with examples</span>
+              Get your Report Now!
+              
             </h3>
             <p className="text-white mb-3">
-              The Design System comes with four pre-built pages to help you get
-              started faster. You can change the text and images and you're good
-              to go. More importantly, looking at them will give you a picture
-              of what you can built with this powerful Bootstrap 4 Design
-              System.
+              
             </p>
             <div className="btn-wrapper">
-              <Button color="primary" to="register-page" tag={Link}>
-                Register Page
+              <Button color="primary" to="/report-page" tag={Link}>
+                View Report
               </Button>
             </div>
           </Col>
@@ -144,7 +140,7 @@ export default function Signup() {
                 </Form>
               </CardBody>
               <CardFooter>
-                <Button className="btn-round" color="primary" size="lg">
+                <Button className="btn-round" color="primary" size="lg" to="/profile-page" tag={Link}>
                   Get Started
                 </Button>
               </CardFooter>

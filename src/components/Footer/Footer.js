@@ -36,6 +36,7 @@ export default function Footer() {
         <Row>
           <Col md="3">
             <h1 className="title">Neuroverse</h1>
+            <Button></Button>
           </Col>
           <Col md="3">
             <Nav>
@@ -52,14 +53,11 @@ export default function Footer() {
             <Nav>
               <NavItem>
                 <NavLink href="https://www.linkedin.com/in/roshni-sahoo-034427229/">
-                 By Roshni Sahoo
+                Team Cybergirlism
                 </NavLink>
               </NavItem>
-              
-              
             </Nav>
           </Col>
-         
         </Row>
       </Container>
     </footer>

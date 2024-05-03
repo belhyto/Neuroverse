@@ -1,23 +1,9 @@
-/*!
 
-=========================================================
-* BLK Design System React - v1.2.2
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/blk-design-system-react
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/blk-design-system-react/blob/main/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import React from "react";
 // reactstrap components
 import { Button, Container, Row, Col } from "reactstrap";
+import { Link } from "react-router-dom";
+
 
 export default function NucleoIcons() {
   return (
@@ -26,7 +12,7 @@ export default function NucleoIcons() {
       <Container>
         <Row className="justify-content-center">
           <Col lg="8" md="12">
-            <h2 className="title">Neuro Match</h2>
+            <h2 className="title">NeuroPlay!</h2>
             <h4 className="description">
             Match your emotion and earn points
             </h4>
@@ -34,12 +20,9 @@ export default function NucleoIcons() {
               <Button
                 className="btn-round"
                 color="warning"
-                href="https://neuromatch.netlify.app/"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-Play Now!              </Button>
-              
+                to="/landing-page" tag={Link}>
+                Play Now!
+              </Button>
             </div>
           </Col>
         </Row>
