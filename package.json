@@ -5,13 +5,7 @@
   "main": "index.js",
   "author": "Roshni",
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/creativetimofficial/blk-design-system-react.git"
-  },
-  "bugs": {
-    "url": "https://github.com/creativetimofficial/blk-design-system-react/issues"
-  },
+ 
   "homepage": "",
   "keywords": [
     "react",
