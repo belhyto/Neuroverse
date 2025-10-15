@@ -1,5 +1,6 @@
 
 import React from "react";
+import ElevenLabsWidget from "./ElevenLabsWidget";
 
 // core components
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
@@ -32,13 +33,18 @@ export default function Index() {
       <IndexNavbar />
       <div className="wrapper">
         <PageHeader />
+        <main className="p-6 bg-white text-black">
+          <ElevenLabsWidget />
+        </main>
         <div className="main">
           
           <NucleoIcons />
           <JavaScript />
-          
+         
           <Signup/>
           <Download/>
+       
+
         </div>
         <Footer />
       </div>

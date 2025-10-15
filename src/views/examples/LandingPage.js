@@ -1,5 +1,6 @@
 
 import React from "react";
+
 // react plugin used to create charts
 import { Line } from "react-chartjs-2";
 // reactstrap components
@@ -21,7 +22,7 @@ import {
 import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
 import Footer from "components/Footer/Footer.js";
 
-import bigChartData from "variables/charts.js";
+import gameChart from "variables/charts2.js";
 
 export default function LandingPage() {
   React.useEffect(() => {
@@ -42,6 +43,7 @@ export default function LandingPage() {
             className="path"
             src={require("assets/img/path3.png")}
           />
+     
           <Container>
             <Row>
               <Col md="4">
@@ -79,6 +81,7 @@ export default function LandingPage() {
                   </CardFooter>
                 </Card>
               </Col>
+              
               <Col md="6">
                 <Card className="card card-plain" style={{ border: '2px solid #349675' }}>
                   <CardHeader>
@@ -105,7 +108,57 @@ export default function LandingPage() {
                   </CardFooter>
                 </Card>
               </Col>
-            
+              <Col md="6">
+                <Card className="card card-plain" style={{ border: '2px solid #349675' }}>
+                  <CardHeader>
+                    <img
+                      alt="..."
+                      className="img-center img-fluid"
+                      src={require("assets/img/neuroread.png")}
+                    />
+                  </CardHeader>
+                  <CardBody>
+                    <Row>
+                      <Col className="text-center" md="12">
+                        <h4 className="text-uppercase">Neuroread</h4>
+                        <span>Practice your reading!</span>
+                        <hr className="line-success" />
+                      </Col>
+                    </Row>
+                
+                  </CardBody>
+                  <CardFooter className="text-center">
+                    <Button className="btn-simple" color="success" href="https://neuroreader.netlify.app/">
+                    Play
+                    </Button>
+                  </CardFooter>
+                </Card>
+              </Col>
+              <Col md="6">
+                <Card className="card card-plain" style={{ border: '2px solid #D84FD3' }}>
+                  <CardHeader>
+                    <img
+                      alt="..."
+                      className="img-center img-fluid"
+                      src={require("assets/img/neuromath.png")}
+                    />  
+                  </CardHeader>
+                  <CardBody>
+                    <Row>
+                      <Col className="text-center" md="12">
+                        <h4 className="text-uppercase">Neuromath</h4>
+                        <span>Solve math quick!</span>
+                        <hr className="line-primary" />
+                      </Col>
+                    </Row>
+                  </CardBody>
+                  <CardFooter className="text-center">
+                    <Button className="btn-simple" color="primary" href="https://neuromath.netlify.app/">
+                      Play
+                    </Button>
+                  </CardFooter>
+                </Card>
+              </Col>
             </Row>
           </Container>
         </section>
@@ -130,7 +183,7 @@ export default function LandingPage() {
                 <Row>
                   <Col className="text-left" sm="6">
                     <hr className="line-info" />
-                    <h5 className="card-category"> Throught the year</h5>
+                    <h5 className="card-category"> Game </h5>
                     <CardTitle tag="h2">Performance</CardTitle>
                   </Col>
                 </Row>
@@ -138,8 +191,8 @@ export default function LandingPage() {
               <CardBody>
                 <div className="chart-area">
                   <Line
-                    data={bigChartData.data}
-                    options={bigChartData.options}
+                    data={gameChart.data}
+                    options={gameChart.options}
                   />
                 </div>
               </CardBody>
