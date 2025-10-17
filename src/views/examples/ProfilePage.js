@@ -13,7 +13,6 @@ import {
   CardBody,
   Label,
   FormGroup,
-  Form,
   Input,
   FormText,
   NavItem,
@@ -25,31 +24,13 @@ import {
   Container,
   Row,
   Col,
-  UncontrolledTooltip,
-  UncontrolledCarousel,
 } from "reactstrap";
 
 // core components
 import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
 import Footer from "components/Footer/Footer.js";
 
-const carouselItems = [
-  {
-    src: require("assets/img/denys.jpg"),
-    altText: "Slide 1",
-    caption: "Big City Life, United States",
-  },
-  {
-    src: require("assets/img/fabien-bazanegue.jpg"),
-    altText: "Slide 2",
-    caption: "Somewhere Beyond, United States",
-  },
-  {
-    src: require("assets/img/mark-finn.jpg"),
-    altText: "Slide 3",
-    caption: "Stocks, United States",
-  },
-];
+// Removed unused carousel items
 
 let ps = null;
 
